@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #222831;
+    font-family: 'Bubblegum Sans', cursive;
+
+}
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.percent {
+    color: #e8e8e8;
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.text{
+    position: absolute;
+    top: 108px;
+    left: 160px;
+    color: #e8e8e8;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 21px;
+    display: none;
+}
+.text-blink {
+    animation: blink .7s ease-in-out .1s;
+}
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.progressBar{
+    width: 410px;
+    height: 25px;
+    background: #30475e;
+    border-radius: 12.5px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.progress{
+    width: 210px;
+    height: 18px;
+    background: #16c79a;
+    border-radius: 12.5px;
+}
+
+
+
